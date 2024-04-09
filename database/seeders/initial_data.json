@@ -1,0 +1,356 @@
+{
+    "users": [
+        {
+            "name": "student x",
+            "email": "student-x@london.ac.uk",
+            "password": "password1234",
+            "role": "user"
+        },
+        {
+            "name": "admin",
+            "email": "admin@laraveljobs-app.com",
+            "password": "superuser1234",
+            "role": "superuser"
+        },
+        {
+            "name": "User 1",
+            "email": "user1@example.com",
+            "password": "password1",
+            "role": "user"
+        },
+        {
+            "name": "User 2",
+            "email": "user2@example.com",
+            "password": "password2",
+            "role": "user"
+        },
+        {
+            "name": "User 3",
+            "email": "user3@example.com",
+            "password": "password3",
+            "role": "user"
+        },
+        {
+            "name": "User 4",
+            "email": "user4@example.com",
+            "password": "password4",
+            "role": "user"
+        }
+    ],
+    
+    "job_vacancies": [
+        {
+            "title": "Senior Laravel Developer",
+            "user_id": 1,
+            "description": "We are looking for a senior Laravel developer with at least 5 years of experience...",
+            "company_name": "ABC Tech Solutions",
+            "location": "New York",
+            "salary_range": "$80,000 - $100,000",
+            "employment_type": "Full-time",
+            "application_deadline": "2024-06-30",
+            "level": "Experienced"
+        },
+        {
+            "title": "Backend Entry Laravel Developer",
+            "user_id": 2,
+            "description": "We need a skilled frontend developer proficient in Vue.js and Laravel 8+",
+            "company_name": "XYZ Web Services",
+            "location": "Los Angeles",
+            "salary_range": "$70,000 - $90,000",
+            "employment_type": "Remote",
+            "application_deadline": "2024-07-15",
+            "level": "Junior"
+        },
+        {
+            "title": "Full Stack Laravel Developer",
+            "user_id": 3,
+            "description": "Join our team as a full stack engineer and work on both frontend and backend Laravel projects...",
+            "company_name": "PQR Innovations",
+            "location": "San Francisco",
+            "salary_range": "$90,000 - $110,000",
+            "employment_type": "Contract",
+            "application_deadline": "2024-07-10",
+            "level": "Intermediate"
+        },
+        {
+            "title": "Junior PHP Developer",
+            "user_id": 4,
+            "description": "Exciting opportunity for a junior PHP developer to kickstart their career...",
+            "company_name": "LMN Software",
+            "location": "Chicago",
+            "salary_range": "$60,000 - $80,000",
+            "employment_type": "Full-time",
+            "application_deadline": "2024-07-20",
+            "level": "Junior"
+        },
+        {
+            "title": "Backend Engineer",
+            "user_id": 1,
+            "description": "We are seeking a backend engineer to help develop and maintain our systems using Laravel, Redis and MySQL",
+            "company_name": "QRS Technologies",
+            "location": "Remote",
+            "salary_range": "$85,000 - $105,000",
+            "employment_type": "Remote",
+            "application_deadline": "2024-07-25",
+            "level": "Experienced"
+        },
+        {
+            "title": "DevOps & Laravel Engineer",
+            "user_id": 2,
+            "description": "Looking for a DevOps engineer to streamline our development processes...",
+            "company_name": "STU Solutions",
+            "location": "Remote",
+            "salary_range": "$95,000 - $115,000",
+            "employment_type": "Part-time",
+            "application_deadline": "2024-08-05",
+            "level": "Experienced"
+        },
+        {
+            "title": "Laravel Intern",
+            "user_id": 3,
+            "description": "Join our team as a software architect and lead the design of complex systems...",
+            "company_name": "VWX Innovations",
+            "location": "Austin",
+            "salary_range": "$100,000 - $120,000",
+            "employment_type": "Contract",
+            "application_deadline": "2024-08-15",
+            "level": "Junior"
+        },
+        {
+            "title": "Senior Laravel Developer Lead",
+            "user_id": 4,
+            "description": "Seeking a Developer Lead with great management and leadership skills to manage a great team of other developers...",
+            "company_name": "YZA Creative Agency",
+            "location": "Miami",
+            "salary_range": "$75,000 - $95,000",
+            "employment_type": "Full-time",
+            "application_deadline": "2024-08-20",
+            "level": "Experienced"
+        },
+        {
+            "title": "Backend Laravel Mobile App Developer",
+            "user_id": 1,
+            "description": "We have an opening for a laravel app developer to create the backend API and logic for innovative iOS and Android apps...",
+            "company_name": "BCD Mobile Solutions",
+            "location": "Denver",
+            "salary_range": "$85,000 - $105,000",
+            "employment_type": "Remote",
+            "application_deadline": "2024-09-01",
+            "level": "Intermediate"
+        },
+        {
+            "title": "PHP Intern",
+            "user_id": 2,
+            "description": "Exciting opportunity for students and undergraduate who want to improve their php skills...",
+            "company_name": "EFG Analytics",
+            "location": "Portland",
+            "salary_range": "$90,000 - $110,000",
+            "employment_type": "Full-time",
+            "application_deadline": "2024-09-10",
+            "level": "Junior"
+        }
+    ],
+
+    "comments": [
+        {
+            "user_id": 1,
+            "job_vacancy_id": 1,
+            "content": "This job looks interesting!"
+        },
+        {
+            "user_id": 2,
+            "job_vacancy_id": 1,
+            "content": "I have applied for this position. Fingers crossed!"
+        },
+        {
+            "user_id": 3,
+            "job_vacancy_id": 1,
+            "content": "What are the requirements for this position?"
+        },
+        {
+            "user_id": 4,
+            "job_vacancy_id": 1,
+            "content": "Are there any opportunities for growth in this role?"
+        },
+        {
+            "user_id": 1,
+            "job_vacancy_id": 2,
+            "content": "Do you accept remote applicants?"
+        },
+        {
+            "user_id": 2,
+            "job_vacancy_id": 2,
+            "content": "Yes, remote applicants are welcome."
+        },
+        {
+            "user_id": 3,
+            "job_vacancy_id": 2,
+            "content": "Is there flexibility in the work schedule?"
+        },
+        {
+            "user_id": 4,
+            "job_vacancy_id": 2,
+            "content": "The work schedule is flexible, with core hours from 10 AM to 4 PM."
+        },
+        {
+            "user_id": 1,
+            "job_vacancy_id": 3,
+            "content": "What are the working hours?"
+        },
+        {
+            "user_id": 2,
+            "job_vacancy_id": 3,
+            "content": "The working hours are from 9 AM to 5 PM, Monday to Friday."
+        },
+        {
+            "user_id": 3,
+            "job_vacancy_id": 3,
+            "content": "Are there any remote work opportunities available?"
+        },
+        {
+            "user_id": 4,
+            "job_vacancy_id": 3,
+            "content": "Yes, we offer remote work options for eligible employees."
+        },
+        {
+            "user_id": 1,
+            "job_vacancy_id": 4,
+            "content": "Is this a remote position?"
+        },
+        {
+            "user_id": 2,
+            "job_vacancy_id": 4,
+            "content": "No, this is an on-site position."
+        },
+        {
+            "user_id": 3,
+            "job_vacancy_id": 4,
+            "content": "What are the primary responsibilities of this role?"
+        },
+        {
+            "user_id": 4,
+            "job_vacancy_id": 4,
+            "content": "The primary responsibilities include software development, testing, and maintenance."
+        },
+        {
+            "user_id": 1,
+            "job_vacancy_id": 5,
+            "content": "What technologies are used in this role?"
+        },
+        {
+            "user_id": 2,
+            "job_vacancy_id": 5,
+            "content": "The technologies used include PHP, Laravel, MySQL, and JavaScript frameworks."
+        },
+        {
+            "user_id": 3,
+            "job_vacancy_id": 5,
+            "content": "Is there room for career advancement in this company?"
+        },
+        {
+            "user_id": 4,
+            "job_vacancy_id": 5,
+            "content": "Yes, we offer opportunities for career growth and professional development."
+        },
+        {
+            "user_id": 1,
+            "job_vacancy_id": 6,
+            "content": "Are there any remote work options available?"
+        },
+        {
+            "user_id": 2,
+            "job_vacancy_id": 6,
+            "content": "Yes, remote work options are available for eligible employees."
+        },
+        {
+            "user_id": 3,
+            "job_vacancy_id": 6,
+            "content": "What is the company culture like?"
+        },
+        {
+            "user_id": 4,
+            "job_vacancy_id": 6,
+            "content": "Our company culture promotes collaboration, innovation, and work-life balance."
+        },
+        {
+            "user_id": 1,
+            "job_vacancy_id": 7,
+            "content": "What benefits are offered with this position?"
+        },
+        {
+            "user_id": 2,
+            "job_vacancy_id": 7,
+            "content": "Benefits include health insurance, retirement plans, and paid time off."
+        },
+        {
+            "user_id": 3,
+            "job_vacancy_id": 7,
+            "content": "Is there an opportunity for training and skill development?"
+        },
+        {
+            "user_id": 4,
+            "job_vacancy_id": 7,
+            "content": "Yes, we provide training programs and support for skill development."
+        },
+        {
+            "user_id": 1,
+            "job_vacancy_id": 8,
+            "content": "Are there opportunities for mentorship?"
+        },
+        {
+            "user_id": 2,
+            "job_vacancy_id": 8,
+            "content": "Yes, we offer mentorship programs to support employee growth."
+        },
+        {
+            "user_id": 3,
+            "job_vacancy_id": 8,
+            "content": "What is the interview process like?"
+        },
+        {
+            "user_id": 4,
+            "job_vacancy_id": 8,
+            "content": "The interview process includes multiple rounds of interviews and technical assessments."
+        },
+        {
+            "user_id": 1,
+            "job_vacancy_id": 9,
+            "content": "Is there flexibility in the work schedule?"
+        },
+        {
+            "user_id": 2,
+            "job_vacancy_id": 9,
+            "content": "Yes, we offer flexible work arrangements for our employees."
+        },
+        {
+            "user_id": 3,
+            "job_vacancy_id": 9,
+            "content": "Are there any opportunities for remote work?"
+        },
+        {
+            "user_id": 4,
+            "job_vacancy_id": 9,
+            "content": "Remote work options are available for eligible employees."
+        },
+        {
+            "user_id": 1,
+            "job_vacancy_id": 10,
+            "content": "What is the team structure like?"
+        },
+        {
+            "user_id": 2,
+            "job_vacancy_id": 10,
+            "content": "The team structure consists of cross-functional teams with clear roles and responsibilities."
+        },
+        {
+            "user_id": 3,
+            "job_vacancy_id": 10,
+            "content": "What are the growth opportunities within the company?"
+        },
+        {
+            "user_id": 4,
+            "job_vacancy_id": 10,
+            "content": "We offer opportunities for career advancement and professional development."
+        }
+    ]
+}
