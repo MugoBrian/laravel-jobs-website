@@ -5,6 +5,7 @@ namespace Tests\Feature\Controllers;
 use App\Models\JobVacancy;
 use App\Models\Comment;
 use App\Models\User;
+
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
@@ -17,7 +18,7 @@ class JobVacancyControllerTest extends TestCase
     public function it_displays_job_vacancies_on_index_page()
     {
         $user = User::factory()->create();
-        JobVacancy::factory()->count(5)->create(['user_id' => $user->id]);
+        JobVacancy::factory()->create();
 
         $response = $this->actingAs($user)->get(route('job_vacancies.index'));
 
@@ -30,7 +31,8 @@ class JobVacancyControllerTest extends TestCase
     public function it_shows_a_job_vacancy_on_show_page()
     {
         $user = User::factory()->create();
-        $jobVacancy = JobVacancy::factory()->create(['user_id' => $user->id]);
+        $jobVacancy = JobVacancy::factory()->create();
+
 
         $response = $this->actingAs($user)->get(route('job_vacancies.show', $jobVacancy->id));
 
@@ -45,13 +47,13 @@ class JobVacancyControllerTest extends TestCase
     public function it_deletes_job_vacancy_and_associated_comments()
     {
         $user = User::factory()->create();
-        $jobVacancy = JobVacancy::factory()->create(['user_id' => $user->id]);
+        $jobVacancy = JobVacancy::factory()->create();
         $comments = Comment::factory()->count(3)->create(['job_vacancy_id' => $jobVacancy->id]);
 
         $response = $this->actingAs($user)->delete(route('job_vacancies.destroy', $jobVacancy->id));
 
         $response->assertRedirect(route('job_vacancies.index'))
-            ->assertSessionHas('success', 'Job vacancy and associated comments deleted successfully.');
+            ->assertSessionHas('success', 'Job vacancy deleted successfully.');
 
         $this->assertDatabaseMissing('job_vacancies', ['id' => $jobVacancy->id]);
         foreach ($comments as $comment) {
